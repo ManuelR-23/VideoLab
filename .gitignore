@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+venv/
+.venv/
+env/
+
+# macOS
+.DS_Store
+*.DS_Store
+
+# Output folders (no subir capturas ni grabaciones personales)
+capturas/
+grabaciones/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

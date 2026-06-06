@@ -1,0 +1,107 @@
+/* ── Global ─────────────────────────────────────────────── */
+QMainWindow, QWidget {
+    background-color: #1a1a2e;
+    color: #e0e0f0;
+    font-family: "SF Pro Display", "Segoe UI", "Helvetica Neue", sans-serif;
+    font-size: 13px;
+}
+
+/* ── Side panels ────────────────────────────────────────── */
+QFrame#panel {
+    background-color: #16213e;
+    border-radius: 10px;
+    border: 1px solid #0f3460;
+}
+
+QLabel#panelTitle {
+    color: #7c8cf8;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding: 4px 0px 8px 2px;
+}
+
+/* ── Filter / AI buttons ────────────────────────────────── */
+QPushButton {
+    background-color: #0f3460;
+    border: 1px solid #1a4a7a;
+    border-radius: 6px;
+    padding: 7px 10px;
+    color: #c0c8f0;
+    text-align: left;
+}
+
+QPushButton:hover {
+    background-color: #1a4a7a;
+    border-color: #7c8cf8;
+    color: #ffffff;
+}
+
+QPushButton:checked {
+    background-color: #7c8cf8;
+    border-color: #a0aaff;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+QPushButton:pressed {
+    background-color: #5a6ae0;
+}
+
+QPushButton:disabled {
+    background-color: #0d1a2e;
+    color: #445566;
+    border-color: #0d1a2e;
+}
+
+/* ── Control bar buttons ────────────────────────────────── */
+QPushButton#btnRecord {
+    background-color: #1a3a1a;
+    border-color: #2a6a2a;
+    color: #80e080;
+    text-align: center;
+    font-weight: bold;
+}
+
+QPushButton#btnRecord:hover {
+    background-color: #2a5a2a;
+    border-color: #50c050;
+}
+
+QPushButton#btnRecord:disabled {
+    background-color: #0d1a0d;
+    color: #2a4a2a;
+    border-color: #0d1a0d;
+}
+
+QPushButton#btnStop {
+    background-color: #3a1a1a;
+    border-color: #6a2a2a;
+    color: #e08080;
+    text-align: center;
+    font-weight: bold;
+}
+
+QPushButton#btnStop:hover {
+    background-color: #5a2a2a;
+    border-color: #c05050;
+}
+
+/* ── Status bar ─────────────────────────────────────────── */
+QStatusBar {
+    background-color: #0f1628;
+    color: #7080a0;
+    border-top: 1px solid #0f3460;
+    font-size: 12px;
+}
+
+/* ── Scrollbars ─────────────────────────────────────────── */
+QScrollBar:vertical {
+    background: #0f1628;
+    width: 6px;
+    border-radius: 3px;
+}
+QScrollBar::handle:vertical {
+    background: #0f3460;
+    border-radius: 3px;
+}
