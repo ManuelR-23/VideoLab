@@ -28,7 +28,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 class VideoDisplay(QLabel):
-    """Video frame display that scales while keeping aspect ratio."""
+    """Componente de visualización de vídeo que escala manteniendo la proporción."""
 
     def __init__(self):
         super().__init__()
@@ -68,7 +68,7 @@ class MainWindow(QMainWindow):
         self._load_styles()
         self._start_capture()
 
-        # AI stats refresh timer (avoids updating labels every frame)
+        # Temporizador para actualizar las estadísticas de IA (evita actualizar cada fotograma)
         self._stats_timer = QTimer(self)
         self._stats_timer.timeout.connect(self._refresh_ai_stats)
         self._stats_timer.start(500)

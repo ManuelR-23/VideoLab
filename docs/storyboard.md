@@ -1,5 +1,8 @@
 # Storyboard — VideoLab
 
+**Autor:** Manuel Rafael Liebana Cruz  
+Sistemas Multimedia — GII, Universidad de Jaén (2025-2026)
+
 ## Pantalla principal
 
 ```
