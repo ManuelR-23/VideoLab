@@ -2,7 +2,7 @@
 QMainWindow, QWidget {
     background-color: #1a1a2e;
     color: #e0e0f0;
-    font-family: "SF Pro Display", "Segoe UI", "Helvetica Neue", sans-serif;
+    font-family: "Helvetica Neue", "Segoe UI", Arial, sans-serif;
     font-size: 13px;
 }
 

@@ -189,7 +189,12 @@ class MainWindow(QMainWindow):
         self._btn_stop.setEnabled(False)
         self._btn_stop.clicked.connect(self._stop_recording)
 
-        for btn in (self._btn_record, self._btn_snap, self._btn_stop):
+        self._btn_mirror = QPushButton("⇄  Espejo")
+        self._btn_mirror.setCheckable(True)
+        self._btn_mirror.setChecked(True)
+        self._btn_mirror.setFixedHeight(42)
+
+        for btn in (self._btn_record, self._btn_snap, self._btn_stop, self._btn_mirror):
             layout.addWidget(btn)
 
         return bar
@@ -224,6 +229,7 @@ class MainWindow(QMainWindow):
         self._capture.error.connect(
             lambda msg: QMessageBox.critical(self, "Error de cámara", msg)
         )
+        self._btn_mirror.toggled.connect(lambda on: setattr(self._capture, "mirror", on))
         self._capture.start()
 
     # ── Frame pipeline ────────────────────────────────────────────────────────

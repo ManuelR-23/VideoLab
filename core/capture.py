@@ -11,6 +11,7 @@ class CaptureThread(QThread):
         super().__init__()
         self._camera_index = camera_index
         self._running = False
+        self.mirror = True
 
     def run(self):
         cap = cv2.VideoCapture(self._camera_index)
@@ -23,6 +24,8 @@ class CaptureThread(QThread):
         while self._running:
             ret, frame = cap.read()
             if ret:
+                if self.mirror:
+                    frame = cv2.flip(frame, 1)
                 self.frame_ready.emit(frame)
             else:
                 self.msleep(10)
