@@ -1,3 +1,6 @@
+# VideoLab — Sistemas Multimedia, GII, Universidad de Jaén (2025-2026)
+# Autor: Manuel Rafael Liebana Cruz
+
 import sys
 from PyQt6.QtWidgets import QApplication
 from ui.main_window import MainWindow

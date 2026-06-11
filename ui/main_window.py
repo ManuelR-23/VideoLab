@@ -1,3 +1,6 @@
+# VideoLab — Sistemas Multimedia, GII, Universidad de Jaén (2025-2026)
+# Autor: Manuel Rafael Liebana Cruz
+
 import os
 import time
 from datetime import datetime

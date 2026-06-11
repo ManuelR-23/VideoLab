@@ -1,3 +1,6 @@
+# VideoLab — Sistemas Multimedia, GII, Universidad de Jaén (2025-2026)
+# Autor: Manuel Rafael Liebana Cruz
+
 import cv2
 import numpy as np
 from PyQt6.QtCore import QThread, pyqtSignal
